@@ -4,8 +4,24 @@
     <option>0982395930</option>
     <option>0502395930</option>
   </select>
+  <div class="lang-toggle">
+    <form>
+      <input
+        type="radio"
+        id="ukr-lang"
+        name="language"
+        value="ukrainian"
+        checked
+      />
+      <label for="ukr-lang">UA</label>
+      <input type="radio" id="eng-lang" name="language" value="english" />
+      <label for="eng-lang">EN</label>
+    </form>
+  </div>
   <div class="shop-title">
     <h1 class="shop-logo">PhotoAce</h1>
     <h3 class="shop-description">Інтернет магазин фототехніки</h3>
   </div>
+  <app-header-navigation></app-header-navigation>
+  <app-search-bar></app-search-bar>
 </div>

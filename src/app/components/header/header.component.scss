@@ -1,0 +1,39 @@
+@import "../../constants.scss";
+
+.container{
+    //height: 30vh;
+    margin-top: 5px;
+    background-color: rgb(232, 247, 252);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.3fr;
+}
+
+.shop-logo{
+    font-family: 'Audiowide', cursive;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.shop-description{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.phone-selection{
+    @include input;
+    height: 30px;
+    width: 120px;
+    grid-column: 1/2;
+}
+
+app-search-bar{
+    grid-column: 1/3;
+}
+
+.lang-toggle{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
