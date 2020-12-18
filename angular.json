@@ -123,6 +123,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "photoAceAngular"
+    }
+  },
+  "defaultProject": "photoAceAngular",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

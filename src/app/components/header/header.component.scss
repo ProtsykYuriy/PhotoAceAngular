@@ -1,8 +1,7 @@
 @import "../../constants.scss";
 
 .container{
-    //height: 30vh;
-    margin-top: 5px;
+    margin: 5px 0 10px 0;
     background-color: rgb(232, 247, 252);
     display: grid;
     grid-template-columns: 1fr 1fr;

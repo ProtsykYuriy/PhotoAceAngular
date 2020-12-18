@@ -4,7 +4,10 @@
 }
 
 body {
-    background-color: #e8f7fc;
+    background-color: #e8f7fc !important;
     max-width: 980px;
-    margin: auto;
+    margin: auto!important;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
