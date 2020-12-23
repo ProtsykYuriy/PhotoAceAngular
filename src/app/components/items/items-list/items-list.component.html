@@ -1,0 +1,9 @@
+<div class="list-of-items">
+  <div class="items-card" *ngFor="let item of fetchedItems$ | async">
+    <app-item-card
+      [itemTitle]="item.title"
+      [itemPrice]="item.price"
+      [imageSource]="item.imgUrl"
+    ></app-item-card>
+  </div>
+</div>
