@@ -11,6 +11,10 @@ import { SearchBarComponent } from './components/header/search-bar/search-bar.co
 import { ItemTypesNavigationComponent } from './components/home/item-types-navigation/item-types-navigation.component';
 import { CarouselComponent } from './components/home/carousel/carousel.component';
 import { ItemsModule } from './components/items/items.module';
+import { AboutUsComponent } from './components/home/about-us/about-us.component';
+import { WeAreSocialComponent } from './components/home/we-are-social/we-are-social.component';
+import { OurAddressComponent } from './components/home/our-address/our-address.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import { ItemsModule } from './components/items/items.module';
     SearchBarComponent,
     ItemTypesNavigationComponent,
     CarouselComponent,
+    AboutUsComponent,
+    WeAreSocialComponent,
+    OurAddressComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

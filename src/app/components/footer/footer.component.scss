@@ -1,0 +1,21 @@
+.info-container {
+  margin: 15px 0;
+  background-color: rgb(200, 240, 245);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .info-cell {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: rgb(168, 236, 245);
+    }
+  }
+}
+
+.rights-reserved {
+  text-align: center;
+}

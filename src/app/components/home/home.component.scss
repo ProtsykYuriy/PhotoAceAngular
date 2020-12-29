@@ -1,0 +1,12 @@
+.carousel-block{
+    display: flex;
+    margin-bottom: 15px;
+
+    app-carousel{
+        flex-grow: 2;
+    }
+
+    app-items-list{
+        margin-left: 5px;
+    }
+}

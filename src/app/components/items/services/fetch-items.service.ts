@@ -18,9 +18,9 @@ export class FetchItemsService {
 
   constructor( private http: HttpClient) { }
 
-  public getItems (){
+  public getItems (itemsQuantity){
     return this.http.get(this.itemsUrl).pipe(
-      map((item:any) => item.slice(0,8).map(element=>{
+      map((item:any) => item.slice(0,itemsQuantity).map(element=>{
         return {
           title : element.title,
           price : +element.url.replace(/[^0-9]/gi,'').slice(-4),

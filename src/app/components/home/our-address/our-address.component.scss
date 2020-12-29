@@ -1,0 +1,21 @@
+.find-us {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+
+  .our-contacts {
+    grid-column: 1/3;
+
+    h5{
+        font-weight: 700;
+    }
+  }
+
+  .our-location {
+    grid-column: 3/13;
+
+    iframe {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}

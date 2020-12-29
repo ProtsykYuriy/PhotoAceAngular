@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FetchItemsService, Item } from '../services/fetch-items.service';
 
@@ -10,10 +10,11 @@ import { FetchItemsService, Item } from '../services/fetch-items.service';
 })
 export class ItemsListComponent implements OnInit {
   public fetchedItems$: Observable <Item[]>;
+  @Input() itemsQuantity: number = 1;
 
   constructor(public fetchItemsService: FetchItemsService) { }
 
   ngOnInit(): void {
-    this.fetchedItems$ =this.fetchItemsService.getItems()
+    this.fetchedItems$ =this.fetchItemsService.getItems(this.itemsQuantity)
   }
 }
